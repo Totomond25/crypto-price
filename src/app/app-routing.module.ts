@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'crypto-precios',
     loadChildren: () => import('./crypto-precios/crypto-precios.module').then( m => m.CryptoPreciosPageModule)
   },
+  {
+    path: 'cypto-precios/ARS',
+    loadChildren: () => import('./precio-enARS/cypto-precios/cypto-precios.module').then( m => m.CyptoPreciosPageModule)
+  },
 ];
 
 @NgModule({

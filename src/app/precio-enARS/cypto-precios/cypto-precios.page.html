@@ -2,12 +2,12 @@
   <ion-toolbar>
     <ion-title>Tokens</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home" ></ion-back-button>
+      <ion-back-button [routerLink]="['/home/']" ></ion-back-button>
     </ion-buttons>
     
       <ion-buttons slot="secondary">
-        <ion-button [routerLink]="['/cypto-precios/ARS']">
-          ARS
+        <ion-button [routerLink]="['/crypto-precios/']">
+          USD
         </ion-button>
       </ion-buttons>
     
@@ -15,7 +15,6 @@
 </ion-header>
 
 <ion-content>
- 
   <ion-card>
    
     <ion-avatar >
@@ -24,7 +23,7 @@
 
     <ion-card-header>
       <ion-card-title>
-        {{BTC_USD.name}} ({{BTC_USD.symbol}})
+        {{BTC_ARS.name}} ({{BTC_ARS.symbol}})
       </ion-card-title>
 
       <ion-card-subtitle>
@@ -35,7 +34,7 @@
     <ion-card-content>
       <ion-card-title>
           <ion-icon name="logo-usd" ></ion-icon>
-          {{BTC_USD.current_price}} ("USD")
+          {{BTC_ARS.current_price}} ("ARS")
       </ion-card-title>
      </ion-card-content>
   </ion-card>
@@ -47,7 +46,7 @@
     </ion-avatar>
     <ion-card-header>
       <ion-card-title>
-        {{ETH_USD.name}} ({{ETH_USD.symbol}})
+        {{ETH_ARS.name}} ({{ETH_ARS.symbol}})
       </ion-card-title>
       <ion-card-subtitle>
         PRECIO:
@@ -57,7 +56,7 @@
     <ion-card-content>
        <ion-card-title>
             <ion-icon name="logo-usd" ></ion-icon>
-            {{ETH_USD.current_price}} ("USD")
+            {{ETH_ARS.current_price}} ("ARS")
         </ion-card-title>
     </ion-card-content>
 
